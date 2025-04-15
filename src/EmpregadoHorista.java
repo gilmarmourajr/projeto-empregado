@@ -4,6 +4,12 @@ public class EmpregadoHorista extends Empregado {
     public int totalHorasTrabalhadas;
     public double valorHoraTrabalhada;
 
+    public EmpregadoHorista(long matricula, String nome, int totalHorasTrabalhadas, double valorHoraTrabalhada) {
+        super(matricula, nome);
+        this.totalHorasTrabalhadas = totalHorasTrabalhadas;
+        this.valorHoraTrabalhada = valorHoraTrabalhada;
+    }
+
     public double calcularSalario() {
         return totalHorasTrabalhadas * valorHoraTrabalhada;
     }

@@ -4,6 +4,11 @@ public abstract class Empregado {
     public long matricula;
     public String nome;
 
+    public Empregado(long matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+    }
+
     public abstract double calcularSalario();
 
     public String toString() {
